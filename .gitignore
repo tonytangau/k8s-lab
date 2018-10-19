@@ -1,0 +1,17 @@
+# Frontend ignored files
+node_modules/
+**/frontend/build/
+
+# WebApp ignored files
+
+# Logic ignored files
+# *.exe
+# *.exe~
+# *.dll
+# *.so
+# *.dylib
+
+# IDE ignored files
+.idea/
+
+.DS_Store
