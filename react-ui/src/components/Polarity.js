@@ -37,7 +37,7 @@ class Polarity extends Component {
     const { sentence } = this.state;
     console.log('Processing', sentence);
 
-    fetch('http://localhost:5000/analyse/sentiment', {
+    fetch(process.env.REACT_APP_SENTIMENT_API, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
