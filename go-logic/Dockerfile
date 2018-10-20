@@ -3,6 +3,7 @@ FROM golang:1.11.1-alpine
 RUN apk add --no-cache git mercurial \
     && mkdir -p ${GOPATH}/go-logic \
     && go get github.com/gorilla/mux \
+    && go get github.com/rs/cors \
     && go get github.com/tonytangau/sentiment \
     && apk del git mercurial
 

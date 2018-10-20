@@ -1,0 +1,12 @@
+.polarity {
+  width: 500px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.polarity-form {
+  display: flex;
+  align-items: center;
+}

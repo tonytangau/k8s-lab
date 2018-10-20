@@ -4,6 +4,7 @@ import (
     "encoding/json"
     "log"
     "net/http"
+    "github.com/rs/cors"
     "github.com/gorilla/mux"
     "github.com/tonytangau/sentiment"
 )
@@ -22,8 +23,10 @@ func main() {
 	model, _ = sentiment.Restore()
 
     r := mux.NewRouter()
-    r.HandleFunc("/analyse/sentiment", CalculateScore).Methods("POST")
-    log.Fatal(http.ListenAndServe(":5000", r))
+    r.HandleFunc("/analyse/sentiment", CalculateScore)
+
+    handler := cors.Default().Handler(r)
+    log.Fatal(http.ListenAndServe(":5000", handler))
 }
 
 func CalculateScore(w http.ResponseWriter, r *http.Request) {
