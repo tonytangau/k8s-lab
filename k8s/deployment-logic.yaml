@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployment-logic
+  labels:
+    app: go-logic
+spec:
+  replicas: 3
+  strategy:
+    type: RollingUpdate
+    rollingUpdate: 
+      maxUnavailable: 1
+      maxSurge: 1
+  selector:
+    matchLabels:
+      app: go-logic
+  template:
+    metadata:
+      labels:
+        app: go-logic
+    spec:
+      containers:
+      - name: go-logic
+        image: tonytangcn/go-logic
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 5000
