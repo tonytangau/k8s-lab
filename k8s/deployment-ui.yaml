@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: deployment-ui
   labels:
-    app: react-ui
+    app: &app react-ui
 spec:
   replicas: 2
   strategy:
@@ -13,14 +13,14 @@ spec:
       maxSurge: 1
   selector:
     matchLabels:
-      app: react-ui
+      app: *app
   template:
     metadata:
       labels:
-        app: react-ui
+        app: *app
     spec:
       containers:
-      - name: react-ui
+      - name: *app
         image: tonytangcn/react-ui
         imagePullPolicy: Always
         ports:

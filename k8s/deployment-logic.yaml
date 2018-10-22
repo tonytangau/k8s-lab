@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: deployment-logic
   labels:
-    app: go-logic
+    app: &app go-logic
 spec:
   replicas: 3
   strategy:
@@ -13,14 +13,14 @@ spec:
       maxSurge: 1
   selector:
     matchLabels:
-      app: go-logic
+      app: *app
   template:
     metadata:
       labels:
-        app: go-logic
+        app: *app
     spec:
       containers:
-      - name: go-logic
+      - name: *app
         image: tonytangcn/go-logic
         imagePullPolicy: Always
         ports:

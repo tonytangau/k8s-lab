@@ -4,24 +4,26 @@ Using different languges/frameworks (Go, ruby, python, Java, C#, React, Vue, Nod
 Sentimental logic with REST API
 - [x] Go
 - [x] Ruby
-- [ ] Python
+- [x] Python
 
 Backend REST API
-- [ ] Java
 - [ ] .Net Core
+- [ ] Java
 - [ ] NodeJS
 
 Frontend web app
 - [x] React
 - [ ] Vue
 
----
 ### Folders
 #### k8s
 Kubernetes deployment and service configurations.
 
 #### go-logic
 Sentimental logic build with Go, using [tonytangau/go-sentiment](https://github.com/tonytangau/go-sentiment).
+
+#### python-logic
+Sentimental logic build with python, [flask](http://flask.pocoo.org/) and [TextBlob](https://textblob.readthedocs.io/en/dev/).
 
 #### ruby-logic
 Sentimental logic build with Ruby and [Sinatra](http://sinatrarb.com/), use [bundler](https://bundler.io/) to organize gems.
