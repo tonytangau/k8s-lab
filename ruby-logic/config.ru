@@ -6,4 +6,4 @@ Bundler.require
 
 require './server'
 
-run RubyServer.run!
+RubyServer.run!

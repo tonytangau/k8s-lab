@@ -1,4 +1,4 @@
-This folder contains deployment and services configuration.
+This folder contains deployment and service configurations.
 
-Use `kubectl apply -f deployment-ui.yaml --record` to setup ui deployment and `kubectl apply -f service-ui-lb.yaml` to setup ui load balance service.
+Use `kubectl apply -f deployment-ui.yaml --record` to setup UI deployment and `kubectl apply -f service-ui-lb.yaml` to setup UI load balance service.
 

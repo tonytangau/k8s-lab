@@ -6,7 +6,7 @@ import (
     "net/http"
     "github.com/rs/cors"
     "github.com/gorilla/mux"
-    "github.com/tonytangau/sentiment"
+    "github.com/tonytangau/go-sentiment"
 )
 
 type SentimentRequest struct {

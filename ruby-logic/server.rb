@@ -1,6 +1,9 @@
 require 'sinatra/base'
 
 class RubyServer < Sinatra::Base
+  set :bind, '0.0.0.0'
+  set :port, 5000
+  
   analyzer = Sentimental.new
   analyzer.load_defaults
 
@@ -12,5 +15,4 @@ class RubyServer < Sinatra::Base
     }
     JSON[result]
   end
-
 end
