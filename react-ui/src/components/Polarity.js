@@ -35,7 +35,7 @@ class Polarity extends Component {
 
   analyzeSentence = () => {
     const { sentence } = this.state;
-    console.log('Processing', sentence);
+    console.log('V2 Processing', sentence);
 
     fetch(process.env.REACT_APP_SENTIMENT_API, {
       method: 'POST',
