@@ -7,8 +7,8 @@ Sentimental logic with REST API
 - [x] Python
 
 Backend REST API
-- [ ] .Net Core
-- [ ] Java
+- [x] .Net Core
+- [x] Java
 - [ ] NodeJS
 
 Frontend web app

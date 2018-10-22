@@ -11,6 +11,11 @@ node_modules/
 build
 gradle*
 
+# .Net ignored files
+bin/
+obj/
+out/
+
 # IDE ignored files
 .idea/
 
