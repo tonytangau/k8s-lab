@@ -5,11 +5,11 @@ node_modules/
 # WebApp ignored files
 
 # Logic ignored files
-# *.exe
-# *.exe~
-# *.dll
-# *.so
-# *.dylib
+
+# Java ignored files
+.gradle
+build
+gradle*
 
 # IDE ignored files
 .idea/
