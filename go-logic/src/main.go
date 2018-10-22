@@ -38,5 +38,6 @@ func CalculateScore(w http.ResponseWriter, r *http.Request) {
     var res SentimentResponse
     res.Polarity = analysis.Average
 
+    w.Header().Set("Content-Type", "application/json")
     json.NewEncoder(w).Encode(res)
 }

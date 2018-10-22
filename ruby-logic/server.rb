@@ -8,6 +8,7 @@ class RubyServer < Sinatra::Base
   analyzer.load_defaults
 
   post "/analyse/sentiment" do
+    content_type :json
     data = JSON.parse request.body.read
     score = analyzer.score data['sentence']
     result = {

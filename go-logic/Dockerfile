@@ -4,7 +4,7 @@ RUN apk add --no-cache git mercurial \
     && mkdir -p ${GOPATH}/go-logic \
     && go get github.com/gorilla/mux \
     && go get github.com/rs/cors \
-    && go get github.com/tonytangau/sentiment \
+    && go get github.com/tonytangau/go-sentiment \
     && apk del git mercurial
 
 WORKDIR ${GOPATH}/go-logic/
