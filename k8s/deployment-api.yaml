@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: deployment-api
   labels:
-    app: &app java-api
+    app: &app dotnet-api
 spec:
   replicas: 2
   strategy:
@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
       - name: *app
-        image: tonytangcn/java-api
+        image: tonytangcn/dotnet-api
         imagePullPolicy: Always
         ports:
         - containerPort: 8080

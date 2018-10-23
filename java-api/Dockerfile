@@ -1,6 +1,6 @@
 FROM openjdk:8-jdk-alpine
 
-ENV LOGIC_URL http://192.168.99.100:31501
+ENV LOGIC_URL http://service-logic-lb
 ENV APP_ROOT /app
 
 RUN mkdir -p $APP_ROOT

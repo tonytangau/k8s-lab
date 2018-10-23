@@ -40,7 +40,6 @@ namespace dotnet_api
                 app.UseHsts();
             }
 
-            app.UseHttpsRedirection();
             app.UseMvc();
         }
     }

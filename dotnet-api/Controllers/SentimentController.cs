@@ -13,7 +13,7 @@ namespace dotnet_api.Controllers
     [ApiController]
     public class SentimentController : ControllerBase
     {
-        const string LOGIC_URL = "http://192.168.99.100:31501/analyse/sentiment";
+        const string LOGIC_URL = "http://service-logic-lb";
         
         [HttpPost]
         public async Task<ActionResult<PolarityDto>> Post([FromBody] SentenceDto sentence)
@@ -21,7 +21,7 @@ namespace dotnet_api.Controllers
             using (var client = new HttpClient())
             {
                 var jsonString = JsonConvert.SerializeObject(sentence);
-                var response = await client.PostAsync(LOGIC_URL, new StringContent(jsonString, Encoding.UTF8, "application/json"));
+                var response = await client.PostAsync(LOGIC_URL + "/analyse/sentiment", new StringContent(jsonString, Encoding.UTF8, "application/json"));
                 response.EnsureSuccessStatusCode();
 
                 return await response.Content.ReadAsAsync<PolarityDto>();
