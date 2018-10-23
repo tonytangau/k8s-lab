@@ -30,3 +30,9 @@ Sentimental logic build with Ruby and [Sinatra](http://sinatrarb.com/), use [bun
 
 #### react-ui
 Frontend web application build with React and [material UI](https://material-ui.com/), bootstrapped with [create-react-app](https://github.com/facebook/create-react-app).
+
+#### java-api
+REST API build with Java and [Spring](https://spring.io/), build using [Gradle](https://gradle.org/). This API layer is not necessary but for the sake of building Java docker image.
+
+#### dotnet-api
+REST API build with .Net Core, and same as `java-api`, the purpose is for building .Net Core docker image.
