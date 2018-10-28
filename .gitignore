@@ -1,20 +1,18 @@
 # Frontend ignored files
 node_modules/
-**/frontend/build/
-
-# WebApp ignored files
-
-# Logic ignored files
+build/
 
 # Java ignored files
 .gradle
-build
+# build
 gradle*
 
 # .Net ignored files
 bin/
 obj/
 out/
+
+
 
 # IDE ignored files
 .idea/
