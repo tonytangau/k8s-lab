@@ -9,7 +9,7 @@ Sentimental logic with REST API
 Backend REST API
 - [x] .Net Core
 - [x] Java
-- [ ] NodeJS
+- [x] NodeJS
 
 Frontend web app
 - [x] React
@@ -36,3 +36,6 @@ REST API build with Java and [Spring](https://spring.io/), build using [Gradle](
 
 #### dotnet-api
 REST API build with .Net Core, and same as `java-api`, the purpose is for building .Net Core docker image.
+
+#### node-api
+REST API build with [fastify](https://github.com/fastify/fastify) and [axios](https://github.com/axios/axios), and same as `java-api`, the purpose is for building NodeJS docker image.
